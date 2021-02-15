@@ -2,6 +2,15 @@
 
 > Google Map integration for VueJs
 
+## Demo
+
+You can clone this directory and run the command below to generate a demo Vue 3 project using this plugin!
+```
+npm run serve:demo
+```
+
+![Wall entry demo](https://max.al/uploads/md/vuejs3-google-maps_preview.png)
+
 ## Description
 This plugin integrates google places into your vue3 application. It uses browser geolocation to track the user. You will have to provide a default fallback address and lat,lng in case the plugin fails to find the user's location. Once the location is found the map is centered and a Marker is placed on the map. The user can search for a different location, move the marker by dragging or clicking.
 
