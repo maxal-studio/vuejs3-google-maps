@@ -15,12 +15,26 @@ npm run serve:demo
 This plugin integrates google places into your vue3 application. It uses browser geolocation to track the user. You will have to provide a default fallback address and lat,lng in case the plugin fails to find the user's location. Once the location is found the map is centered and a Marker is placed on the map. The user can search for a different location, move the marker by dragging or clicking.
 
 ## Events
-1. Search - User can search for by query for any kind of address
-2. Map clicking - Once a click is triggered on the map, the plugin will try to find the nearest road or business.
-3. Dragging - Dragging will not trigger any Map API events, it will only update the users' latitude and longitude
+1. Search - User can search by query for any kind of address
+2. Map clicking - Once a click is triggered on the map, the plugin will try to find the nearest road, business, city.
+3. Dragging - Dragging will not trigger any Map API events, it will only update the users latitude and longitude
 
 ## Callbacks
 1. On each map data change the plugin will return back a list of computed data:
+
+```js
+{
+  address_description: "Global Records Albania, Rruga Frederik Shiroka 3, Tiranë, Albania"
+  city: "Tiranë"
+  country: "Albania"
+  lat: 41.327455
+  lng: 19.80484
+  place: Proxy {address_components: Array(6), formatted_address: "Rruga Frederik Shiroka 3, Tiranë, Albania", geometry: {…}, name: "Global Records Albania", html_attributions: Array(0), …} //Google Maps API place object
+  query: ""
+  state: "Qarku i Tiranës"
+  zip_code: "1001" //Sometime comes as null
+}
+```
    
 ## Installation
 
