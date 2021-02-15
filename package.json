@@ -1,0 +1,54 @@
+{
+  "name": "vuejs3-google-maps",
+  "version": "0.1.0",
+  "author": {
+    "name": "Max.Al",
+    "email": "info@max.al",
+    "url": "https://max.al"
+  },
+  "keywords": [
+    "vuejs",
+    "vue3",
+    "vue3-plugin",
+    "vue3-components",
+    "googlemap",
+    "google-maps"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxal-studio/vuejs3-google-maps.git"
+  },
+  "main": "./dist/vue3-google-maps.umd.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-cli-service build --target lib --name vue3-google-maps ./gmaps/gmaps.js",
+    "serve:demo": "vue-cli-service serve",
+    "build:demo": "vue-cli-service build",
+    "lint:demo": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0-0",
+    "sass": "^1.32.6",
+    "sass-loader": "^10.1.1",
+    "style-resources-loader": "^1.4.1",
+    "url-loader": "^4.1.1",
+    "vue3-geolocation": "^1.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
