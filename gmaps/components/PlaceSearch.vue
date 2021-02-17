@@ -165,11 +165,11 @@ export default {
     },
     watchCityAndCountryChange() {
       if (this.place != null) {
-        if (this.place.name != this.country && this.place.name != this.city) {
+        if (this.place.formatted_address.includes(this.place.name)) {
+          this.address_description = this.place.formatted_address;
+        } else {
           this.address_description =
             this.place.name + ", " + this.place.formatted_address;
-        } else {
-          this.address_description = this.place.formatted_address;
         }
       }
     },
