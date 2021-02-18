@@ -81,9 +81,11 @@ app.mount("#app");
 ```html
 <PlaceSearch
   placeholder="Enter a location"
+  loading="Map is loading"
   v-bind:fallbackProcedure="fallbackProcedure"
   v-bind:zoom="zoom"
   v-bind:geolocation="geolocation"
+  gps_timeout="3000"
   v-bind:address="address"
   @changed="getMapData"
 >

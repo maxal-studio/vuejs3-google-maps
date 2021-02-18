@@ -80,7 +80,6 @@ const loader = {
 
       window.VueGoogleMapsLoaded = this._setLoaded.bind(this);
     } else {
-      console.warn("The Google Maps library is already loaded");
       this._setLoaded();
     }
   },

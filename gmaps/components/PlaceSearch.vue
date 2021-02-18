@@ -31,14 +31,18 @@
 import loader from "./../lib-loader";
 export default {
   name: "PlaceSearch",
-  props: [
-    "loading",
-    "placeholder",
-    "fallbackProcedure",
-    "zoom",
-    "geolocation",
-    "address",
-  ],
+  props: {
+    loading: String,
+    placeholder: String,
+    fallbackProcedure: String,
+    zoom: Number,
+    geolocation: Object,
+    gps_timeout: {
+      type: Number,
+      default: 0,
+    },
+    address: Object,
+  },
   data() {
     return {
       //Default Coordinates (Somwhere in North Atlantic Ocean) if GPS and Find By Country Fails
@@ -334,7 +338,7 @@ export default {
     } else if (this.fallbackProcedure == "address") {
       this.initMapByAddress();
     } else {
-      await this.$getLocation()
+      await this.$getLocation({ timeout: this.gps_timeout })
         .then((coordinates) => {
           this.lat = coordinates.lat;
           this.lng = coordinates.lng;
