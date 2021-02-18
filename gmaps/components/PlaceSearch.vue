@@ -169,11 +169,15 @@ export default {
     },
     watchCityAndCountryChange() {
       if (this.place != null) {
-        if (this.place.formatted_address.includes(this.place.name)) {
+        if (this.place.name == undefined || this.place.name == null) {
           this.address_description = this.place.formatted_address;
         } else {
-          this.address_description =
-            this.place.name + ", " + this.place.formatted_address;
+          if (this.place.formatted_address.includes(this.place.name)) {
+            this.address_description = this.place.formatted_address;
+          } else {
+            this.address_description =
+              this.place.name + ", " + this.place.formatted_address;
+          }
         }
       }
     },
