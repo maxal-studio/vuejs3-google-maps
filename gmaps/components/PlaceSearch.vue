@@ -32,6 +32,10 @@ import loader from "./../lib-loader";
 export default {
   name: "PlaceSearch",
   props: {
+    ready: {
+      type: Boolean,
+      default: undefined,
+    },
     loading: String,
     placeholder: String,
     fallbackProcedure: String,
@@ -92,6 +96,11 @@ export default {
           this.place.address_components,
           this.placeAddresCompoponent[key]
         );
+      }
+    },
+    ready: function (new_value) {
+      if (new_value == true) {
+        this.buildApplication();
       }
     },
   },
@@ -333,32 +342,38 @@ export default {
       this.generateSearchCard();
       this.createInfoWindow();
     },
+    async buildApplication() {
+      if (this.fallbackProcedure == "geolocation") {
+        this.initMapByCoordinates(this.lat, this.lng);
+      } else if (this.fallbackProcedure == "address") {
+        this.initMapByAddress();
+      } else {
+        await this.$getLocation({ timeout: this.gps_timeout })
+          .then((coordinates) => {
+            this.lat = coordinates.lat;
+            this.lng = coordinates.lng;
+            this.initMapByCoordinates(this.lat, this.lng, this.zoom);
+            //Create Marker
+            this.createMarker();
+
+            this.marker.setPosition({
+              lat: this.lat,
+              lng: this.lng,
+            });
+          })
+          .catch(() => {
+            this.initMapByAddress();
+          });
+      }
+    },
   },
   async mounted() {
     await loader.ensureReady();
-
-    if (this.fallbackProcedure == "geolocation") {
-      this.initMapByCoordinates(this.lat, this.lng);
-    } else if (this.fallbackProcedure == "address") {
-      this.initMapByAddress();
-    } else {
-      await this.$getLocation({ timeout: this.gps_timeout })
-        .then((coordinates) => {
-          this.lat = coordinates.lat;
-          this.lng = coordinates.lng;
-          this.initMapByCoordinates(this.lat, this.lng, this.zoom);
-          //Create Marker
-          this.createMarker();
-
-          this.marker.setPosition({
-            lat: this.lat,
-            lng: this.lng,
-          });
-        })
-        .catch(() => {
-          this.initMapByAddress();
-        });
+    if (this.ready != undefined && this.ready == false) {
+      console.log("waiting");
+      return;
     }
+    this.buildApplication();
   },
 };
 </script>

@@ -80,6 +80,7 @@ app.mount("#app");
 
 ```html
 <PlaceSearch
+  v-bind:ready="ready"
   placeholder="Enter a location"
   loading="Map is loading"
   v-bind:fallbackProcedure="fallbackProcedure"
@@ -97,6 +98,7 @@ export default {
   name: "AddressesCreate",
   data() {
     return {
+      ready: false, //Add ready:false to stop map from loading, and then when changed to true map will auto load
       // **GPS** : will trigger geolocation plugin , to find users location by GPS
       // **geolocation** : will try to find the place by lat, lng
       // **address**: will try to find the place by address query

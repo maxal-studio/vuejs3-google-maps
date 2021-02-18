@@ -2,10 +2,16 @@
   <div>
     <div class="pt-2 font-size-xl mb-3">Create Address</div>
 
+    <button class="btn btn-success" @click="ready = true">
+      Trigger map ready event
+    </button>
+    <hr />
+
     <div class="row">
       <div class="col-md-8">
         <div class="map_holder">
           <place-search
+            v-bind:ready="ready"
             placeholder="Enter a location"
             loading="Map is loading"
             v-bind:gps_timeout="3000"
@@ -71,6 +77,7 @@ export default {
   name: "App",
   data() {
     return {
+      ready: false, //Add ready:false to stop map from loading, and then when changed to true map will auto load
       fallbackProcedure: "gps", //gps | geolocation | address
       zoom: 17, //Default Zoom
       geolocation: {
