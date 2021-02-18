@@ -2,7 +2,7 @@
   <div>
     <div class="pt-2 font-size-xl mb-3">Create Address</div>
 
-    <button class="btn btn-success" @click="ready = true">
+    <button class="btn btn-success" @click="triggerReady">
       Trigger map ready event
     </button>
     <hr />
@@ -98,6 +98,16 @@ export default {
     getMapData(place) {
       this.place = place;
       console.log(place);
+    },
+    triggerReady() {
+      this.geolocation = {
+        // If GPS and Find by address fails then, map will be positioned by a default geolocation
+        lat: 41.3242856,
+        lng: 19.8180722, //Somewhere in the center of the world
+        zoom: 17,
+      };
+      this.fallbackProcedure = "geolocation";
+      this.ready = true;
     },
   },
   created() {},

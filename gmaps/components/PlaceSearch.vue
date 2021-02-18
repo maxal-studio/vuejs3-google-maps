@@ -98,10 +98,18 @@ export default {
         );
       }
     },
+    geolocation: function (new_value) {
+      console.log("changed");
+      this.lat = new_value != null ? new_value.lat : null;
+      this.lng = new_value != null ? new_value.lng : null;
+    },
     ready: function (new_value) {
-      if (new_value == true) {
-        this.buildApplication();
-      }
+      //Add timeout to wait for any other watchers
+      setTimeout(() => {
+        if (new_value == true) {
+          this.buildApplication();
+        }
+      }, 200);
     },
   },
   methods: {
