@@ -122,7 +122,6 @@ export default {
   methods: {
     getMapData(place) {
       this.place = place;
-      console.log(place);
     },
   },
   created() {},

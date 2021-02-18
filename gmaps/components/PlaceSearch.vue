@@ -99,7 +99,6 @@ export default {
       }
     },
     geolocation: function (new_value) {
-      console.log("changed");
       this.lat = new_value != null ? new_value.lat : null;
       this.lng = new_value != null ? new_value.lng : null;
     },
@@ -378,7 +377,6 @@ export default {
   async mounted() {
     await loader.ensureReady();
     if (this.ready != undefined && this.ready == false) {
-      console.log("waiting");
       return;
     }
     this.buildApplication();
