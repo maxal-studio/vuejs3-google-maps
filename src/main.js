@@ -8,7 +8,7 @@ let app = createApp(App);
 app.use(VueGeolocation);
 app.use(GMaps, {
   load: {
-    apiKey: "AIzaSyBNYAld3avvW841AOAnHChp0PAfvZWsUlA",
+    apiKey: "your-api-key",
     libraries: ["places"],
   },
 });

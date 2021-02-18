@@ -19,6 +19,7 @@
             v-bind:zoom="zoom"
             v-bind:geolocation="geolocation"
             v-bind:address="address"
+            v-bind:manually="manually"
             @changed="getMapData"
           >
           </place-search>
@@ -78,17 +79,27 @@ export default {
   data() {
     return {
       ready: false, //Add ready:false to stop map from loading, and then when changed to true map will auto load
-      fallbackProcedure: "gps", //gps | geolocation | address
+      fallbackProcedure: "gps", //gps | geolocation | address | manually
       zoom: 17, //Default Zoom
       geolocation: {
         // If GPS and Find by address fails then, map will be positioned by a default geolocation
-        lat: 31.73858, //Somewhere in the center of the world
+        lat: 31.73858,
         lng: -35.98628,
         zoom: 2,
       },
       address: {
         query: "Albania, Tirane", //If GPS fails, Find by address is triggered
         zoom: 10,
+      },
+      manually: {
+        address_description: "21 Dhjetori, Tirana, Albania",
+        city: "Tirana",
+        country: "Albania",
+        lat: 41.3267905,
+        lng: 19.8060475,
+        state: "Tirana County",
+        zip_code: "",
+        zoom: 17,
       },
       place: {},
       form_data: {},
@@ -100,13 +111,7 @@ export default {
       console.log(place);
     },
     triggerReady() {
-      this.geolocation = {
-        // If GPS and Find by address fails then, map will be positioned by a default geolocation
-        lat: 41.3242856,
-        lng: 19.8180722, //Somewhere in the center of the world
-        zoom: 17,
-      };
-      this.fallbackProcedure = "geolocation";
+      this.fallbackProcedure = "manually";
       this.ready = true;
     },
   },

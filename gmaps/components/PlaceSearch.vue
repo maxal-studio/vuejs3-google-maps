@@ -46,6 +46,7 @@ export default {
       default: 0,
     },
     address: Object,
+    manually: Object,
   },
   data() {
     return {
@@ -85,17 +86,19 @@ export default {
       //  this.map.setCenter(this.place.geometry.location);
     },
     place: function () {
-      this.watchCityAndCountryChange();
+      if (this.place.manually == undefined) {
+        this.watchCityAndCountryChange();
 
-      this.lat = this.place.geometry.location.lat();
-      this.lng = this.place.geometry.location.lng();
+        this.lat = this.place.geometry.location.lat();
+        this.lng = this.place.geometry.location.lng();
 
-      for (const key in this.placeAddresCompoponent) {
-        this.$set;
-        this[key] = this.getAddressComponent(
-          this.place.address_components,
-          this.placeAddresCompoponent[key]
-        );
+        for (const key in this.placeAddresCompoponent) {
+          this.$set;
+          this[key] = this.getAddressComponent(
+            this.place.address_components,
+            this.placeAddresCompoponent[key]
+          );
+        }
       }
     },
     geolocation: function (new_value) {
@@ -219,6 +222,34 @@ export default {
       this.createMap({ lat: lat, lng: lng }, zoom);
       this.findNearestPlace();
       this.prepareMap();
+      //Create Marker
+      this.createMarker();
+
+      this.marker.setPosition({
+        lat: lat,
+        lng: lng,
+      });
+    },
+    initMapManually() {
+      this.address_description = this.manually.address_description;
+      this.city = this.manually.city;
+      this.country = this.manually.country;
+      this.lat = this.manually.lat;
+      this.lng = this.manually.lng;
+      this.state = this.manually.state;
+      this.zip_code = this.manually.zip_code;
+      this.lat = this.manually.lat;
+      this.lng = this.manually.lng;
+
+      this.createMap({ lat: this.lat, lng: this.lng }, this.manually.zoom);
+      this.prepareMap();
+      //Create Marker
+      this.createMarker();
+
+      this.marker.setPosition({
+        lat: this.lat,
+        lng: this.lng,
+      });
     },
     initMapByAddress() {
       let geocoder = new window.google.maps.Geocoder();
@@ -350,7 +381,9 @@ export default {
       this.createInfoWindow();
     },
     async buildApplication() {
-      if (this.fallbackProcedure == "geolocation") {
+      if (this.fallbackProcedure == "manually") {
+        this.initMapManually();
+      } else if (this.fallbackProcedure == "geolocation") {
         this.initMapByCoordinates(this.lat, this.lng);
       } else if (this.fallbackProcedure == "address") {
         this.initMapByAddress();
