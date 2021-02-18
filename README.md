@@ -85,7 +85,7 @@ app.mount("#app");
   v-bind:fallbackProcedure="fallbackProcedure"
   v-bind:zoom="zoom"
   v-bind:geolocation="geolocation"
-  gps_timeout="3000"
+  v-bind:gps_timeout="3000"
   v-bind:address="address"
   @changed="getMapData"
 >

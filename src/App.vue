@@ -8,7 +8,7 @@
           <place-search
             placeholder="Enter a location"
             loading="Map is loading"
-            gps_timeout="3000"
+            v-bind:gps_timeout="3000"
             v-bind:fallbackProcedure="fallbackProcedure"
             v-bind:zoom="zoom"
             v-bind:geolocation="geolocation"
