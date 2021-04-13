@@ -1,4 +1,4 @@
-# vue3-google-maps
+# vuejs3-google-maps
 
 > Google Map integration for VueJs
 
@@ -39,7 +39,7 @@ This plugin integrates google places into your vue3 application. It uses browser
 ## Installation
 
 ```
-npm i vue3-google-maps
+npm i vuejs3-google-maps
 ```
 
 ## Dependencies
@@ -61,7 +61,7 @@ Before starting you need a Google API key from the [developer console](http://co
 
 ```js
 import VueGeolocation from "vue3-geolocation";
-import GMaps from "vue3-google-maps";
+import GMaps from "vuejs3-google-maps";
 
 let app = createApp(App);
 
