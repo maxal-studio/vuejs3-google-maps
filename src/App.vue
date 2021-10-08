@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div class="pt-2 font-size-xl mb-3">Create Address</div>
 
     <button class="btn btn-success" @click="triggerReady">
@@ -14,7 +14,7 @@
             v-bind:ready="ready"
             placeholder="Enter a location"
             loading="Map is loading"
-            v-bind:gps_timeout="3000"
+            v-bind:gps_timeout="7000"
             v-bind:fallbackProcedure="fallbackProcedure"
             v-bind:zoom="zoom"
             v-bind:geolocation="geolocation"

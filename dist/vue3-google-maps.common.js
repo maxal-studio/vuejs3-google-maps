@@ -440,17 +440,6 @@ module.exports = function (iterable, unboundFunction, options) {
 
 /***/ }),
 
-/***/ "2331":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_0114a7d2_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("a4af");
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_0114a7d2_lang_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_0114a7d2_lang_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
-
-
-/***/ }),
-
 /***/ "23cb":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1079,6 +1068,17 @@ $({ target: 'Array', proto: true, forced: !STRICT_METHOD || !USES_TO_LENGTH }, {
 
 /***/ }),
 
+/***/ "47d5":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_f6b56d4e_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("621b");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_f6b56d4e_lang_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_f6b56d4e_lang_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+
 /***/ "4840":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1418,6 +1418,13 @@ module.exports = {
 
 /***/ }),
 
+/***/ "4d66":
+/***/ (function(module, exports) {
+
+module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABHNCSVQICAgIfAhkiAAABPxJREFUaEPtWUFy2zYUBUh3V8v2CaqcILKSfeSJnK2dE0Q+QeQTVD1B3RNEPkHtba2MlX0jsycofYJYSnY1ib5PghYEAiBIWTthRjMaCgT++//9/x8gzjY0FpNXp4yJT/hErf7d0Ya2YXxTCy9uulOs/obW5yI42j3+e7qJvbYAbF7dRsCTb1sKFY768Venk4TBCResg2f0aa86UUy54JHgPErC5PrgKHrwdLJz2loR+Hbb2Q+S8ANnYlg2uNK8MarT5brVqTEA1PkPqPEXMHO/0lT3hKskTM8RkbjJOrUBSK/fwutEE3XcAxBqfQCDkkg36PvN614apB2estOiPygvP+DZeevtbFwXRC0AxPM0CP7U6ALD+bDV/3rluzmc0A4TPsJ7iOJyIH8udo9n577r0DxvANL4W5UyAl7bezsjGjUaOZCAgL9UFhi3+rMz3wW9ABBtsNGd4vl5kKa9n99Fke9Gtnn52hxOWEajjmO8AMwnr+4Uzj+b8SqoxeQQ/F+C8NVPlQAWn7sDJhhUZT7g+UOX53NahG8EF20uRA9GxfBoHCRiuvvu7osrYqr8wLwYVHpRFWEnAEmdfwveu0Ir+fwr5g4cm8YANELCX5rmyP2Ilr/Q70Kw3/aOZyMXCCeA+U13xDkjo2jcwyNt02JL7e/dE6j2n5m6sRbxB+x50BjAYtIl70uj+XtTqZTGU2mtNQTj0V7/66HZIV1EKo8CImbct3jPGgFZNqnyWL0vaUNzGnVjbP7Hbn9GMmRlzD93h+gJv+cPxTVOdDjdmYcVwCp9xCUWGehL6JWjVgjkZFDphd61pWMo+tkAjax2Wn+AcWgw/MQWRn2TJsZnBLFEAfSlZM4anKvyOQAs+W/ykl5emwLAe8ZyWeXAYj+eJ2H6sWwA77lCqFWoNew3U0RbP0Yu4KMOHpOKBYDuNzx2JqGJg1rTWQuAiSI+DqK+xH0MMQLQWv86CODJA70n+AAguZHlAGl13QDBU1Ke1irgs4EvKJODvk+6F4KxjNqU6ExkqvVpPO48xlS97ElccTFFoFWQvsaW55nrvO+1jBWA6gGbBkL+UGLJjtkQAmdnppOYmpsmihW72SOgqlDBvrSOZyWaPUMpNeorTZ5YNZikl9lzUhlShcqGqRfQ89V6XSsK1nOF2uGrFKlTja5KBbOckECnMF09FlYhmSMzhybq6B3e5rhKCtEEPVFdi6k5U2H9Per+qe1QBO6Tss3Fm4W66vrVJzJFE5EETsPkyHarRt7bSYIhyh8ZoCW3uGacX7muTvScqvK+MwcKlDKkJKz25DPvWwOS5P/9xKheV14j6rceNpGnR7cyAlmiaudiPPIGUZUM9LvhyuYfeL/nA9wLQJYPSmfMjRLTJBTvfTZxgZDOocNLocfmML7tu643gCwSZf0Tuw7pLsMtlwC1r2xqASCDVo97TybGSPALJDhdmwOUfSxuOieMB5TkA22WN23U92oDyOiU66AxvpZkBFUqXILRXdDTrV2Qsn3cE+EymNOFcEm6U8I+hunIlzZrAygWkIqUDuVFhXI5v/wb6nyykw6qouZatFEE9AXzRBSgRXGGduK4hzwYpzvpeB3Dix2eBYBqbl4Sw7b88yOjWKHnoeHpf4PKnlAnjM8OoNjcV8/XMdY0dwvA5sFtBDy5tTkKKV3bR1V62luatjEA2b+ZaTDAJ1r3v2AXuP8BxVnEryMn3rAAAAAASUVORK5CYII="
+
+/***/ }),
+
 /***/ "4de4":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1581,23 +1588,6 @@ module.exports = function (bitmap, value) {
 
 /***/ }),
 
-/***/ "5cff":
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
-var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__("1de5");
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__("bbc5");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
-// Module
-exports.push([module.i, "#mapHolder{position:relative}#mapHolder,#mapHolder #map,#mapHolder #map .loading{width:100%;height:100%;float:left}#mapHolder #map .loading{background-color:#ededed;position:realtive}#mapHolder #map .loading .text{width:100%;padding:15px;text-align:center;position:absolute;top:50%;transform:translateY(-50%)}#mapHolder #map iframe{width:100%;height:100%}#mapHolder #map #infowindow-content,#mapHolder #map #pac-card{display:block}#mapHolder #pac-card{background:#ededed;padding:10px;width:100%;height:auto;display:none}#mapHolder #pac-card input{width:100%;line-height:30px;border-radius:5px;background-color:#fff;border:0;outline:0;padding:5px 15px 5px 40px;font-size:14px;background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");background-size:auto 15px;background-repeat:no-repeat;background-position:left 15px center}#mapHolder #infowindow-content{width:100%;float:left;display:none}", ""]);
-// Exports
-module.exports = exports;
-
-
-/***/ }),
-
 /***/ "605d":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1666,6 +1656,21 @@ module.exports = !nativeAssign || fails(function () {
   } return T;
 } : nativeAssign;
 
+
+/***/ }),
+
+/***/ "621b":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("6fba");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("6fc30357", content, true, {"sourceMap":false,"shadowMode":false});
 
 /***/ }),
 
@@ -1844,6 +1849,25 @@ var TEMPLATE = String(String).split('String');
 })(Function.prototype, 'toString', function toString() {
   return typeof this == 'function' && getInternalState(this).source || inspectSource(this);
 });
+
+
+/***/ }),
+
+/***/ "6fba":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__("1de5");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__("bbc5");
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__("4d66");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
+// Module
+exports.push([module.i, "#mapHolder{position:relative}#mapHolder,#mapHolder #map,#mapHolder #map .loading{width:100%;height:100%;float:left}#mapHolder #map .loading{background-color:#ededed;position:realtive}#mapHolder #map .loading .text{width:100%;padding:15px;text-align:center;position:absolute;top:50%;transform:translateY(-50%)}#mapHolder #map iframe{width:100%;height:100%}#mapHolder #map #infowindow-content,#mapHolder #map #pac-card{display:block}@-webkit-keyframes gps-searching-animation{0%{width:50%;height:50%}to{width:100%;height:100%}}@keyframes gps-searching-animation{0%{width:50%;height:50%}to{width:100%;height:100%}}#mapHolder #pac-card{background:#ededed;padding:10px;width:100%;height:auto;display:none;position:relative}#mapHolder #pac-card input{width:100%;line-height:30px;border-radius:5px;background-color:#fff;border:0;outline:0;padding:5px 40px 5px 40px;font-size:14px;background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");background-size:auto 15px;background-repeat:no-repeat;background-position:left 15px center}#mapHolder #pac-card .location-by-gps-btn{position:absolute;width:30px;height:30px;top:50%;transform:translateY(-50%);right:15px}#mapHolder #pac-card .location-by-gps-btn:hover{cursor:pointer}#mapHolder #pac-card .location-by-gps-btn:before{display:block;content:\"\";width:100%;height:100%;position:absolute;top:0;left:0;z-index:2;background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");background-position:50%;background-repeat:no-repeat;background-size:18px auto;border-radius:30px}#mapHolder #pac-card .location-by-gps-btn.searching:after{display:block;border-radius:30px;background-color:#fdf6e3;content:\"\";width:100%;height:100%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1;-webkit-animation-name:gps-searching-animation;animation-name:gps-searching-animation;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-duration:1s;animation-duration:1s}#mapHolder #infowindow-content{width:100%;float:left;display:none}", ""]);
+// Exports
+module.exports = exports;
 
 
 /***/ }),
@@ -3163,21 +3187,6 @@ $({ target: 'Array', proto: true, forced: ES3_STRINGS || !STRICT_METHOD }, {
 
 /***/ }),
 
-/***/ "a4af":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("5cff");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("499e").default
-var update = add("af684e9e", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
 /***/ "a4b4":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3536,6 +3545,50 @@ var floor = Math.floor;
 module.exports = function (argument) {
   return isNaN(argument = +argument) ? 0 : (argument > 0 ? floor : ceil)(argument);
 };
+
+
+/***/ }),
+
+/***/ "a79d":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var $ = __webpack_require__("23e7");
+var IS_PURE = __webpack_require__("c430");
+var NativePromise = __webpack_require__("fea9");
+var fails = __webpack_require__("d039");
+var getBuiltIn = __webpack_require__("d066");
+var speciesConstructor = __webpack_require__("4840");
+var promiseResolve = __webpack_require__("cdf9");
+var redefine = __webpack_require__("6eeb");
+
+// Safari bug https://bugs.webkit.org/show_bug.cgi?id=200829
+var NON_GENERIC = !!NativePromise && fails(function () {
+  NativePromise.prototype['finally'].call({ then: function () { /* empty */ } }, function () { /* empty */ });
+});
+
+// `Promise.prototype.finally` method
+// https://tc39.es/ecma262/#sec-promise.prototype.finally
+$({ target: 'Promise', proto: true, real: true, forced: NON_GENERIC }, {
+  'finally': function (onFinally) {
+    var C = speciesConstructor(this, getBuiltIn('Promise'));
+    var isFunction = typeof onFinally == 'function';
+    return this.then(
+      isFunction ? function (x) {
+        return promiseResolve(C, onFinally()).then(function () { return x; });
+      } : onFinally,
+      isFunction ? function (e) {
+        return promiseResolve(C, onFinally()).then(function () { throw e; });
+      } : onFinally
+    );
+  }
+});
+
+// patch native Promise.prototype for native async functions
+if (!IS_PURE && typeof NativePromise == 'function' && !NativePromise.prototype['finally']) {
+  redefine(NativePromise.prototype, 'finally', getBuiltIn('Promise').prototype['finally']);
+}
 
 
 /***/ }),
@@ -5359,7 +5412,7 @@ var es_function_name = __webpack_require__("b0c0");
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./gmaps/components/PlaceSearch.vue?vue&type=template&id=0114a7d2
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./gmaps/components/PlaceSearch.vue?vue&type=template&id=f6b56d4e
 
 
 var _hoisted_1 = {
@@ -5398,9 +5451,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return $data.query = $event;
     })
-  }, null, 8, ["placeholder"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelText"], $data.query]])]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_6, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", _hoisted_7, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($data.place != null ? $data.place.name : ""), 1), _hoisted_8, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", _hoisted_9, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($data.place != null ? $data.place.formatted_address : ""), 1)])]);
+  }, null, 8, ["placeholder"]), [[external_commonjs_vue_commonjs2_vue_root_Vue_["vModelText"], $data.query]]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", {
+    class: ["location-by-gps-btn", {
+      searching: $data.searching_gps
+    }],
+    onClick: _cache[2] || (_cache[2] = Object(external_commonjs_vue_commonjs2_vue_root_Vue_["withModifiers"])(function () {
+      return $options.getLocationViaGPS && $options.getLocationViaGPS.apply($options, arguments);
+    }, ["prevent"]))
+  }, null, 2)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_6, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", _hoisted_7, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($data.place != null ? $data.place.name : ""), 1), _hoisted_8, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", _hoisted_9, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($data.place != null ? $data.place.formatted_address : ""), 1)])]);
 }
-// CONCATENATED MODULE: ./gmaps/components/PlaceSearch.vue?vue&type=template&id=0114a7d2
+// CONCATENATED MODULE: ./gmaps/components/PlaceSearch.vue?vue&type=template&id=f6b56d4e
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.filter.js
 var es_array_filter = __webpack_require__("4de4");
@@ -5413,6 +5473,9 @@ var es_array_some = __webpack_require__("45fc");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.promise.finally.js
+var es_promise_finally = __webpack_require__("a79d");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.includes.js
 var es_string_includes = __webpack_require__("2532");
@@ -5470,6 +5533,9 @@ function _asyncToGenerator(fn) {
 
 
 
+
+
+
 /* harmony default export */ var PlaceSearchvue_type_script_lang_js = ({
   name: "PlaceSearch",
   props: {
@@ -5484,14 +5550,15 @@ function _asyncToGenerator(fn) {
     geolocation: Object,
     gps_timeout: {
       type: Number,
-      default: 0
+      default: 5000
     },
     address: Object,
     manually: Object
   },
   data: function data() {
     return {
-      //Default Coordinates (Somwhere in North Atlantic Ocean) if GPS and Find By Country Fails
+      searching_gps: false,
+      //Default Coordinates (Somewhere in North Atlantic Ocean) if GPS and Find By Country Fails
       lat: this.geolocation != null ? this.geolocation.lat : null,
       lng: this.geolocation != null ? this.geolocation.lng : null,
       query_address: this.address.query,
@@ -5822,68 +5889,69 @@ function _asyncToGenerator(fn) {
     emitData: function emitData() {
       this.$emit("changed", this.returnData());
     },
-    buildApplication: function buildApplication() {
+    //Get location via GPS
+    getLocationViaGPS: function getLocationViaGPS() {
       var _this7 = this;
+
+      this.searching_gps = true;
+      this.$getLocation({
+        timeout: this.gps_timeout
+      }).then(function (coordinates) {
+        _this7.lat = coordinates.lat;
+        _this7.lng = coordinates.lng;
+
+        _this7.findNearestPlace();
+
+        _this7.marker.setPosition({
+          lat: _this7.lat,
+          lng: _this7.lng
+        });
+      }).catch(function (error) {
+        console.log(error);
+      }).finally(function () {
+        _this7.searching_gps = false;
+      });
+    },
+    buildApplication: function buildApplication() {
+      var _this8 = this;
 
       return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                if (!(_this7.fallbackProcedure === "manually")) {
-                  _context.next = 4;
-                  break;
-                }
+                if (_this8.fallbackProcedure === "manually") {
+                  _this8.initMapManually();
+                } else if (_this8.fallbackProcedure === "geolocation") {
+                  _this8.initMapByCoordinates(_this8.lat, _this8.lng);
+                } else if (_this8.fallbackProcedure === "address") {
+                  _this8.initMapByAddress();
+                } else {
+                  _this8.searching_gps = true;
 
-                _this7.initMapManually();
+                  _this8.$getLocation({
+                    timeout: _this8.gps_timeout
+                  }).then(function (coordinates) {
+                    _this8.lat = coordinates.lat;
+                    _this8.lng = coordinates.lng;
 
-                _context.next = 14;
-                break;
-
-              case 4:
-                if (!(_this7.fallbackProcedure === "geolocation")) {
-                  _context.next = 8;
-                  break;
-                }
-
-                _this7.initMapByCoordinates(_this7.lat, _this7.lng);
-
-                _context.next = 14;
-                break;
-
-              case 8:
-                if (!(_this7.fallbackProcedure === "address")) {
-                  _context.next = 12;
-                  break;
-                }
-
-                _this7.initMapByAddress();
-
-                _context.next = 14;
-                break;
-
-              case 12:
-                _context.next = 14;
-                return _this7.$getLocation({
-                  timeout: _this7.gps_timeout
-                }).then(function (coordinates) {
-                  _this7.lat = coordinates.lat;
-                  _this7.lng = coordinates.lng;
-
-                  _this7.initMapByCoordinates(_this7.lat, _this7.lng, _this7.zoom); //Create Marker
+                    _this8.initMapByCoordinates(_this8.lat, _this8.lng, _this8.zoom); //Create Marker
 
 
-                  _this7.createMarker();
+                    _this8.createMarker();
 
-                  _this7.marker.setPosition({
-                    lat: _this7.lat,
-                    lng: _this7.lng
+                    _this8.marker.setPosition({
+                      lat: _this8.lat,
+                      lng: _this8.lng
+                    });
+                  }).catch(function () {
+                    _this8.initMapByAddress();
+                  }).finally(function () {
+                    _this8.searching_gps = false;
                   });
-                }).catch(function () {
-                  _this7.initMapByAddress();
-                });
+                }
 
-              case 14:
+              case 1:
               case "end":
                 return _context.stop();
             }
@@ -5893,7 +5961,7 @@ function _asyncToGenerator(fn) {
     }
   },
   mounted: function mounted() {
-    var _this8 = this;
+    var _this9 = this;
 
     return _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
       return regeneratorRuntime.wrap(function _callee2$(_context2) {
@@ -5904,7 +5972,7 @@ function _asyncToGenerator(fn) {
               return lib_loader.ensureReady();
 
             case 2:
-              if (!(_this8.ready != undefined && _this8.ready == false)) {
+              if (!(_this9.ready != undefined && _this9.ready == false)) {
                 _context2.next = 4;
                 break;
               }
@@ -5912,7 +5980,7 @@ function _asyncToGenerator(fn) {
               return _context2.abrupt("return");
 
             case 4:
-              _this8.buildApplication();
+              _this9.buildApplication();
 
             case 5:
             case "end":
@@ -5925,8 +5993,8 @@ function _asyncToGenerator(fn) {
 });
 // CONCATENATED MODULE: ./gmaps/components/PlaceSearch.vue?vue&type=script&lang=js
  
-// EXTERNAL MODULE: ./gmaps/components/PlaceSearch.vue?vue&type=style&index=0&id=0114a7d2&lang=scss
-var PlaceSearchvue_type_style_index_0_id_0114a7d2_lang_scss = __webpack_require__("2331");
+// EXTERNAL MODULE: ./gmaps/components/PlaceSearch.vue?vue&type=style&index=0&id=f6b56d4e&lang=scss
+var PlaceSearchvue_type_style_index_0_id_f6b56d4e_lang_scss = __webpack_require__("47d5");
 
 // CONCATENATED MODULE: ./gmaps/components/PlaceSearch.vue
 

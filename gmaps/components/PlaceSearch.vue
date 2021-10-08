@@ -12,6 +12,7 @@
           type="text"
           v-model="query"
       />
+      <div class="location-by-gps-btn" :class="{searching: searching_gps}" @click.prevent="getLocationViaGPS"></div>
     </div>
     <div id="infowindow-content">
       <!-- /.prova -->
@@ -44,14 +45,15 @@ export default {
     geolocation: Object,
     gps_timeout: {
       type: Number,
-      default: 0,
+      default: 5000,
     },
     address: Object,
     manually: Object,
   },
   data() {
     return {
-      //Default Coordinates (Somwhere in North Atlantic Ocean) if GPS and Find By Country Fails
+      searching_gps: false,
+      //Default Coordinates (Somewhere in North Atlantic Ocean) if GPS and Find By Country Fails
       lat: this.geolocation != null ? this.geolocation.lat : null,
       lng: this.geolocation != null ? this.geolocation.lng : null,
       query_address: this.address.query,
@@ -382,6 +384,25 @@ export default {
     emitData() {
       this.$emit("changed", this.returnData());
     },
+    //Get location via GPS
+    getLocationViaGPS() {
+      this.searching_gps = true;
+      this.$getLocation({timeout: this.gps_timeout}).then((coordinates) => {
+        this.lat = coordinates.lat;
+        this.lng = coordinates.lng;
+
+        this.findNearestPlace();
+
+        this.marker.setPosition({
+          lat: this.lat,
+          lng: this.lng,
+        });
+      }).catch((error) => {
+        console.log(error);
+      }).finally(() => {
+        this.searching_gps = false;
+      });
+    },
     async buildApplication() {
       if (this.fallbackProcedure === "manually") {
         this.initMapManually();
@@ -390,22 +411,23 @@ export default {
       } else if (this.fallbackProcedure === "address") {
         this.initMapByAddress();
       } else {
-        await this.$getLocation({timeout: this.gps_timeout})
-            .then((coordinates) => {
-              this.lat = coordinates.lat;
-              this.lng = coordinates.lng;
-              this.initMapByCoordinates(this.lat, this.lng, this.zoom);
-              //Create Marker
-              this.createMarker();
+        this.searching_gps = true;
+        this.$getLocation({timeout: this.gps_timeout}).then((coordinates) => {
+          this.lat = coordinates.lat;
+          this.lng = coordinates.lng;
+          this.initMapByCoordinates(this.lat, this.lng, this.zoom);
+          //Create Marker
+          this.createMarker();
 
-              this.marker.setPosition({
-                lat: this.lat,
-                lng: this.lng,
-              });
-            })
-            .catch(() => {
-              this.initMapByAddress();
-            });
+          this.marker.setPosition({
+            lat: this.lat,
+            lng: this.lng,
+          });
+        }).catch(() => {
+          this.initMapByAddress();
+        }).finally(() => {
+          this.searching_gps = false;
+        });
       }
     },
   },
@@ -459,12 +481,24 @@ export default {
     }
   }
 
+  @keyframes gps-searching-animation {
+    from {
+      width: 50%;
+      height: 50%;
+    }
+    to {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   #pac-card {
     background: #ededed;
     padding: 10px;
     width: 100%;
     height: auto;
     display: none;
+    position: relative;
 
     input {
       width: 100%;
@@ -473,12 +507,60 @@ export default {
       background-color: #fff;
       border: 0;
       outline: 0;
-      padding: 5px 15px 5px 40px;
+      padding: 5px 40px 5px 40px;
       font-size: 14px;
       background-image: url("~@/assets/search.png");
       background-size: auto 15px;
       background-repeat: no-repeat;
       background-position: left 15px center;
+    }
+
+    .location-by-gps-btn {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 15px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:before {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        background-image: url("~@/assets/gps.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 18px auto;
+        border-radius: 30px;
+      }
+
+      &.searching {
+        &:after {
+          display: block;
+          border-radius: 30px;
+          background-color: #FDF6E3;
+          content: "";
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 1;
+          animation-name: gps-searching-animation;
+          animation-iteration-count: infinite;
+          animation-duration: 1s;
+        }
+      }
     }
   }
 
