@@ -7,21 +7,21 @@
     </div>
     <div id="pac-card">
       <input
-        id="pac-input"
-        v-bind:placeholder="placeholder"
-        type="text"
-        v-model="query"
+          id="pac-input"
+          v-bind:placeholder="placeholder"
+          type="text"
+          v-model="query"
       />
     </div>
     <div id="infowindow-content">
       <!-- /.prova -->
       <span id="place-name" class="title">{{
-        place != null ? place.name : ""
-      }}</span
-      ><br />
+          place != null ? place.name : ""
+        }}</span
+      ><br/>
       <span id="place-address">{{
-        place != null ? place.formatted_address : ""
-      }}</span>
+          place != null ? place.formatted_address : ""
+        }}</span>
     </div>
   </div>
   <!-- /#mapHolder -->
@@ -29,6 +29,7 @@
 
 <script>
 import loader from "./../lib-loader";
+
 export default {
   name: "PlaceSearch",
   props: {
@@ -79,12 +80,6 @@ export default {
     };
   },
   watch: {
-    lat: function () {
-      this.$emit("changed", this.returnData());
-      //FInd places
-
-      //  this.map.setCenter(this.place.geometry.location);
-    },
     place: function () {
       if (this.place.manually == undefined) {
         this.watchCityAndCountryChange();
@@ -95,10 +90,12 @@ export default {
         for (const key in this.placeAddresCompoponent) {
           this.$set;
           this[key] = this.getAddressComponent(
-            this.place.address_components,
-            this.placeAddresCompoponent[key]
+              this.place.address_components,
+              this.placeAddresCompoponent[key]
           );
         }
+
+        this.emitData();
       }
     },
     geolocation: function (new_value) {
@@ -174,16 +171,16 @@ export default {
     getPlaceDetails(id, callback) {
       var service = new window.google.maps.places.PlacesService(this.map);
       service.getDetails(
-        {
-          placeId: id,
-          fields: [
-            "address_components",
-            "formatted_address",
-            "geometry",
-            "name",
-          ],
-        },
-        callback
+          {
+            placeId: id,
+            fields: [
+              "address_components",
+              "formatted_address",
+              "geometry",
+              "name",
+            ],
+          },
+          callback
       );
     },
     watchCityAndCountryChange() {
@@ -195,7 +192,7 @@ export default {
             this.address_description = this.place.formatted_address;
           } else {
             this.address_description =
-              this.place.name + ", " + this.place.formatted_address;
+                this.place.name + ", " + this.place.formatted_address;
           }
         }
       }
@@ -203,7 +200,7 @@ export default {
     getAddressComponent(address_components, key) {
       var value = "";
       var postalCodeType = address_components.filter((aComp) =>
-        aComp.types.some((typesItem) => typesItem === key)
+          aComp.types.some((typesItem) => typesItem === key)
       );
       if (postalCodeType != null && postalCodeType.length > 0)
         value = postalCodeType[0].long_name;
@@ -211,15 +208,15 @@ export default {
     },
     initMapByCoordinates(lat, lng, override_zoom = null) {
       let zoom =
-        this.geolocation.zoom != undefined
-          ? this.geolocation.zoom
-          : this.default_zoom;
+          this.geolocation.zoom != undefined
+              ? this.geolocation.zoom
+              : this.default_zoom;
 
       if (override_zoom != null) {
         zoom = override_zoom;
       }
 
-      this.createMap({ lat: lat, lng: lng }, zoom);
+      this.createMap({lat: lat, lng: lng}, zoom);
       this.findNearestPlace();
       this.prepareMap();
       //Create Marker
@@ -241,7 +238,9 @@ export default {
       this.lat = this.manually.lat;
       this.lng = this.manually.lng;
 
-      this.createMap({ lat: this.lat, lng: this.lng }, this.manually.zoom);
+      this.emitData();
+
+      this.createMap({lat: this.lat, lng: this.lng}, this.manually.zoom);
       this.prepareMap();
       //Create Marker
       this.createMarker();
@@ -254,9 +253,9 @@ export default {
     initMapByAddress() {
       let geocoder = new window.google.maps.Geocoder();
       let zoom =
-        this.address.zoom != undefined ? this.address.zoom : this.default_zoom;
+          this.address.zoom != undefined ? this.address.zoom : this.default_zoom;
 
-      geocoder.geocode({ address: this.query_address }, (results, status) => {
+      geocoder.geocode({address: this.query_address}, (results, status) => {
         if (status == window.google.maps.GeocoderStatus.OK) {
           this.createMap(results[0].geometry.location, zoom);
           this.place = results[0];
@@ -326,11 +325,11 @@ export default {
         // types: ["address"],
       };
       this.map.controls[window.google.maps.ControlPosition.TOP_RIGHT].push(
-        card
+          card
       );
       const autocomplete = new window.google.maps.places.Autocomplete(
-        input,
-        options
+          input,
+          options
       );
 
       // Bind the map's bounds (viewport) property to the autocomplete object,
@@ -380,30 +379,33 @@ export default {
       this.generateSearchCard();
       this.createInfoWindow();
     },
+    emitData() {
+      this.$emit("changed", this.returnData());
+    },
     async buildApplication() {
-      if (this.fallbackProcedure == "manually") {
+      if (this.fallbackProcedure === "manually") {
         this.initMapManually();
-      } else if (this.fallbackProcedure == "geolocation") {
+      } else if (this.fallbackProcedure === "geolocation") {
         this.initMapByCoordinates(this.lat, this.lng);
-      } else if (this.fallbackProcedure == "address") {
+      } else if (this.fallbackProcedure === "address") {
         this.initMapByAddress();
       } else {
-        await this.$getLocation({ timeout: this.gps_timeout })
-          .then((coordinates) => {
-            this.lat = coordinates.lat;
-            this.lng = coordinates.lng;
-            this.initMapByCoordinates(this.lat, this.lng, this.zoom);
-            //Create Marker
-            this.createMarker();
+        await this.$getLocation({timeout: this.gps_timeout})
+            .then((coordinates) => {
+              this.lat = coordinates.lat;
+              this.lng = coordinates.lng;
+              this.initMapByCoordinates(this.lat, this.lng, this.zoom);
+              //Create Marker
+              this.createMarker();
 
-            this.marker.setPosition({
-              lat: this.lat,
-              lng: this.lng,
+              this.marker.setPosition({
+                lat: this.lat,
+                lng: this.lng,
+              });
+            })
+            .catch(() => {
+              this.initMapByAddress();
             });
-          })
-          .catch(() => {
-            this.initMapByAddress();
-          });
       }
     },
   },
@@ -435,6 +437,7 @@ export default {
       float: left;
       background-color: #ededed;
       position: realtive;
+
       .text {
         width: 100%;
         padding: 15px;
@@ -455,6 +458,7 @@ export default {
       display: block;
     }
   }
+
   #pac-card {
     background: #ededed;
     padding: 10px;
