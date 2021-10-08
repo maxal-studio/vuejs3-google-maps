@@ -397,6 +397,8 @@ export default {
           lat: this.lat,
           lng: this.lng,
         });
+
+        this.map.panTo(new window.google.maps.LatLng(this.lat, this.lng));
       }).catch((error) => {
         console.log(error);
       }).finally(() => {

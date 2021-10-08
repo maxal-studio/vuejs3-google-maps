@@ -696,6 +696,21 @@ module.exports = function (CONSTRUCTOR_NAME) {
 
 /***/ }),
 
+/***/ "2917":
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__("679d");
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var add = __webpack_require__("499e").default
+var update = add("4e4bbad0", content, true, {"sourceMap":false,"shadowMode":false});
+
+/***/ }),
+
 /***/ "2a62":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1073,17 +1088,6 @@ $({ target: 'Array', proto: true, forced: !STRICT_METHOD || !USES_TO_LENGTH }, {
     return $some(this, callbackfn, arguments.length > 1 ? arguments[1] : undefined);
   }
 });
-
-
-/***/ }),
-
-/***/ "47d5":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_f6b56d4e_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("621b");
-/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_f6b56d4e_lang_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_f6b56d4e_lang_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* unused harmony reexport * */
 
 
 /***/ }),
@@ -1668,21 +1672,6 @@ module.exports = !nativeAssign || fails(function () {
 
 /***/ }),
 
-/***/ "621b":
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__("6fba");
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var add = __webpack_require__("499e").default
-var update = add("6fc30357", content, true, {"sourceMap":false,"shadowMode":false});
-
-/***/ }),
-
 /***/ "6547":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1740,6 +1729,25 @@ module.exports = function (originalArray, length) {
     }
   } return new (C === undefined ? Array : C)(length === 0 ? 0 : length);
 };
+
+
+/***/ }),
+
+/***/ "679d":
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__("1de5");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__("bbc5");
+var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__("4d66");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
+// Module
+exports.push([module.i, "#mapHolder{position:relative}#mapHolder,#mapHolder #map,#mapHolder #map .loading{width:100%;height:100%;float:left}#mapHolder #map .loading{background-color:#ededed;position:realtive}#mapHolder #map .loading .text{width:100%;padding:15px;text-align:center;position:absolute;top:50%;transform:translateY(-50%)}#mapHolder #map iframe{width:100%;height:100%}#mapHolder #map #infowindow-content,#mapHolder #map #pac-card{display:block}@-webkit-keyframes gps-searching-animation{0%{width:50%;height:50%}to{width:100%;height:100%}}@keyframes gps-searching-animation{0%{width:50%;height:50%}to{width:100%;height:100%}}#mapHolder #pac-card{background:#ededed;padding:10px;width:100%;height:auto;display:none;position:relative}#mapHolder #pac-card input{width:100%;line-height:30px;border-radius:5px;background-color:#fff;border:0;outline:0;padding:5px 40px 5px 40px;font-size:14px;background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");background-size:auto 15px;background-repeat:no-repeat;background-position:left 15px center}#mapHolder #pac-card .location-by-gps-btn{position:absolute;width:30px;height:30px;top:50%;transform:translateY(-50%);right:15px}#mapHolder #pac-card .location-by-gps-btn:hover{cursor:pointer}#mapHolder #pac-card .location-by-gps-btn:before{display:block;content:\"\";width:100%;height:100%;position:absolute;top:0;left:0;z-index:2;background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");background-position:50%;background-repeat:no-repeat;background-size:18px auto;border-radius:30px}#mapHolder #pac-card .location-by-gps-btn.searching:after{display:block;border-radius:30px;background-color:#fdf6e3;content:\"\";width:100%;height:100%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1;-webkit-animation-name:gps-searching-animation;animation-name:gps-searching-animation;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-duration:1s;animation-duration:1s}#mapHolder #infowindow-content{width:100%;float:left;display:none}", ""]);
+// Exports
+module.exports = exports;
 
 
 /***/ }),
@@ -1858,25 +1866,6 @@ var TEMPLATE = String(String).split('String');
 })(Function.prototype, 'toString', function toString() {
   return typeof this == 'function' && getInternalState(this).source || inspectSource(this);
 });
-
-
-/***/ }),
-
-/***/ "6fba":
-/***/ (function(module, exports, __webpack_require__) {
-
-// Imports
-var ___CSS_LOADER_API_IMPORT___ = __webpack_require__("24fb");
-var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__("1de5");
-var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__("bbc5");
-var ___CSS_LOADER_URL_IMPORT_1___ = __webpack_require__("4d66");
-exports = ___CSS_LOADER_API_IMPORT___(false);
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_1___);
-// Module
-exports.push([module.i, "#mapHolder{position:relative}#mapHolder,#mapHolder #map,#mapHolder #map .loading{width:100%;height:100%;float:left}#mapHolder #map .loading{background-color:#ededed;position:realtive}#mapHolder #map .loading .text{width:100%;padding:15px;text-align:center;position:absolute;top:50%;transform:translateY(-50%)}#mapHolder #map iframe{width:100%;height:100%}#mapHolder #map #infowindow-content,#mapHolder #map #pac-card{display:block}@-webkit-keyframes gps-searching-animation{0%{width:50%;height:50%}to{width:100%;height:100%}}@keyframes gps-searching-animation{0%{width:50%;height:50%}to{width:100%;height:100%}}#mapHolder #pac-card{background:#ededed;padding:10px;width:100%;height:auto;display:none;position:relative}#mapHolder #pac-card input{width:100%;line-height:30px;border-radius:5px;background-color:#fff;border:0;outline:0;padding:5px 40px 5px 40px;font-size:14px;background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");background-size:auto 15px;background-repeat:no-repeat;background-position:left 15px center}#mapHolder #pac-card .location-by-gps-btn{position:absolute;width:30px;height:30px;top:50%;transform:translateY(-50%);right:15px}#mapHolder #pac-card .location-by-gps-btn:hover{cursor:pointer}#mapHolder #pac-card .location-by-gps-btn:before{display:block;content:\"\";width:100%;height:100%;position:absolute;top:0;left:0;z-index:2;background-image:url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ");background-position:50%;background-repeat:no-repeat;background-size:18px auto;border-radius:30px}#mapHolder #pac-card .location-by-gps-btn.searching:after{display:block;border-radius:30px;background-color:#fdf6e3;content:\"\";width:100%;height:100%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1;-webkit-animation-name:gps-searching-animation;animation-name:gps-searching-animation;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-duration:1s;animation-duration:1s}#mapHolder #infowindow-content{width:100%;float:left;display:none}", ""]);
-// Exports
-module.exports = exports;
 
 
 /***/ }),
@@ -4426,6 +4415,17 @@ $({ target: 'Array', proto: true, forced: !HAS_SPECIES_SUPPORT || !USES_TO_LENGT
 
 /***/ }),
 
+/***/ "da55":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_184132ca_lang_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("2917");
+/* harmony import */ var _node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_184132ca_lang_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_vue_style_loader_index_js_ref_8_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_8_oneOf_1_1_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_2_node_modules_postcss_loader_src_index_js_ref_8_oneOf_1_3_node_modules_sass_loader_dist_cjs_js_ref_8_oneOf_1_4_node_modules_cache_loader_dist_cjs_js_ref_0_0_node_modules_vue_cli_service_node_modules_vue_loader_v16_dist_index_js_ref_0_1_PlaceSearch_vue_vue_type_style_index_0_id_184132ca_lang_scss__WEBPACK_IMPORTED_MODULE_0__);
+/* unused harmony reexport * */
+
+
+/***/ }),
+
 /***/ "da84":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -5421,7 +5421,7 @@ var es_function_name = __webpack_require__("b0c0");
 // EXTERNAL MODULE: external {"commonjs":"vue","commonjs2":"vue","root":"Vue"}
 var external_commonjs_vue_commonjs2_vue_root_Vue_ = __webpack_require__("8bbf");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./gmaps/components/PlaceSearch.vue?vue&type=template&id=f6b56d4e
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist/templateLoader.js??ref--6!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/@vue/cli-service/node_modules/vue-loader-v16/dist??ref--0-1!./gmaps/components/PlaceSearch.vue?vue&type=template&id=184132ca
 
 
 var _hoisted_1 = {
@@ -5469,7 +5469,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }, ["prevent"]))
   }, null, 2)]), Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("div", _hoisted_6, [Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", _hoisted_7, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($data.place != null ? $data.place.name : ""), 1), _hoisted_8, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["createVNode"])("span", _hoisted_9, Object(external_commonjs_vue_commonjs2_vue_root_Vue_["toDisplayString"])($data.place != null ? $data.place.formatted_address : ""), 1)])]);
 }
-// CONCATENATED MODULE: ./gmaps/components/PlaceSearch.vue?vue&type=template&id=f6b56d4e
+// CONCATENATED MODULE: ./gmaps/components/PlaceSearch.vue?vue&type=template&id=184132ca
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.filter.js
 var es_array_filter = __webpack_require__("4de4");
@@ -5915,6 +5915,8 @@ function _asyncToGenerator(fn) {
           lat: _this7.lat,
           lng: _this7.lng
         });
+
+        _this7.map.panTo(new window.google.maps.LatLng(_this7.lat, _this7.lng));
       }).catch(function (error) {
         console.log(error);
       }).finally(function () {
@@ -6002,8 +6004,8 @@ function _asyncToGenerator(fn) {
 });
 // CONCATENATED MODULE: ./gmaps/components/PlaceSearch.vue?vue&type=script&lang=js
  
-// EXTERNAL MODULE: ./gmaps/components/PlaceSearch.vue?vue&type=style&index=0&id=f6b56d4e&lang=scss
-var PlaceSearchvue_type_style_index_0_id_f6b56d4e_lang_scss = __webpack_require__("47d5");
+// EXTERNAL MODULE: ./gmaps/components/PlaceSearch.vue?vue&type=style&index=0&id=184132ca&lang=scss
+var PlaceSearchvue_type_style_index_0_id_184132ca_lang_scss = __webpack_require__("da55");
 
 // CONCATENATED MODULE: ./gmaps/components/PlaceSearch.vue
 
