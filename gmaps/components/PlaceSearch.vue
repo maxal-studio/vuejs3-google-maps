@@ -284,6 +284,8 @@ export default {
         window.google.maps.event.addListener(this.marker, "dragend", () => {
           this.lat = this.marker.getPosition().lat();
           this.lng = this.marker.getPosition().lng();
+
+          this.emitData();
         });
 
         //Get markes position on move
